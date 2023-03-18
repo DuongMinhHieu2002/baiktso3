@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<EditText
+    android:hint="Tên Máy"
+    android:id="@+id/editName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/editPhone"
+        android:hint="Mã Máy"
+        android:layout_below="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:id="@+id/lm"
+        android:layout_below="@+id/editPhone"
+        android:text="Loại máy:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <RadioGroup
+        android:id="@+id/g1"
+        android:layout_below="@id/editPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/laptop"
+            android:text="laptop"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/lm"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@+id/editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/utb"
+            android:text="untrabook"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/lm"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@+id/laptop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/ws"
+            android:text="work station"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/lm"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@+id/utb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/bh"
+        android:layout_below="@+id/g1"
+        android:text="Loại máy:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <RadioGroup
+        android:id="@+id/g2"
+        android:layout_below="@id/bh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/mot"
+            android:text="1 nam"
+            android:textSize="20sp"
+            android:layout_below="@+id/bh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/hai"
+            android:text="2 nam"
+            android:textSize="20sp"
+            android:layout_below="@+id/mot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/ba"
+            android:text="3 nam"
+            android:textSize="20sp"
+            android:layout_below="@+id/hai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="NHẬP LIỆU/CẬP NHẬT"
+        android:layout_below="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+    <Button
+        android:id="@+id/btnnhaplai"
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/g2"
+        android:layout_toRightOf="@id/btnAdd"
+        android:layout_height="wrap_content"></Button>
+    <ListView
+        android:id="@+id/lvData"
+        android:layout_below="@id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</RelativeLayout>

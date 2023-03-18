@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:src="@drawable/cp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"></ImageView>
+    <TextView
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:textSize="20sp"
+        android:text="Name"
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:text="Phone"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:text="Loai may"
+        android:layout_toRightOf="@+id/tvName"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/loaimay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:text="Nambh"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@+id/tvPhone"
+        android:id="@+id/nambh"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+</RelativeLayout>
